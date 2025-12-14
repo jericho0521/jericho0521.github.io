@@ -1,4 +1,4 @@
-import { Music, Mail, Linkedin, Github, FileText, Video, Image, Download, ExternalLink } from 'lucide-react';
+import { Music, Mail, Linkedin, Github, Video, Image, ExternalLink } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -59,9 +59,9 @@ export function Footer() {
             <h4 className="mb-4">Project Resources</h4>
             <ul className="space-y-3">
               <li>
-                <a 
-                  href="https://drive.google.com/file/d/YOUR_VIDEO_ID/view" 
-                  target="_blank" 
+                <a
+                  href="https://drive.google.com/file/d/YOUR_VIDEO_ID/view"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
                 >
@@ -71,50 +71,14 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://drive.google.com/file/d/YOUR_POSTER_PPTX_ID/view" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
-                >
-                  <Image className="w-4 h-4" />
-                  <span>Poster (PPTX)</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://drive.google.com/file/d/YOUR_POSTER_PDF_ID/view" 
-                  target="_blank" 
+                <a
+                  href="https://drive.google.com/file/d/YOUR_POSTER_PDF_ID/view"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
                 >
                   <Image className="w-4 h-4" />
                   <span>Poster (PDF)</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://drive.google.com/file/d/YOUR_DOC_ID/view" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
-                >
-                  <FileText className="w-4 h-4" />
-                  <span>Project Document (.doc)</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://drive.google.com/file/d/YOUR_PDF_ID/view" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
-                >
-                  <FileText className="w-4 h-4" />
-                  <span>Project Document (.pdf)</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>

@@ -104,7 +104,7 @@ export function HomePage() {
         </div>
       </div>
 
-      <ProductShowcase />
+      {/* <ProductShowcase /> */}
 
       <Impact />
       <Footer />

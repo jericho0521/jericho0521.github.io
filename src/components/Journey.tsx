@@ -3,31 +3,31 @@ import { Lightbulb, Users, FlaskConical, Rocket } from 'lucide-react';
 const milestones = [
   {
     icon: Lightbulb,
-    phase: 'Ideation',
-    title: 'Research & Discovery',
+    phase: 'First',
+    title: 'Project Ideation',
     description: 'Extensive literature review on music therapy and Parkinson\'s disease. Conducted interviews with patients and healthcare professionals to understand needs.',
-    timeline: 'Month 1-2'
+    timeline: 'Week 1-2'
   },
   {
     icon: Users,
-    phase: 'Co-Design',
-    title: 'User-Centered Design',
-    description: 'Collaborated with Parkinson\'s patients to design ergonomic prototypes. Iterative testing to ensure comfort and usability for daily activities.',
-    timeline: 'Month 3-4'
+    phase: 'Second',
+    title: 'Initial Device Prototype',
+    description: 'Developed a basic prototype of the device with AI tremor detection and ergonomic design.',
+    timeline: 'Week 3-4'
   },
   {
     icon: FlaskConical,
-    phase: 'Development',
-    title: 'Prototype & Testing',
-    description: 'Built functional prototype with AI tremor detection. Conducted pilot studies measuring tremor reduction and user satisfaction.',
-    timeline: 'Month 5-7'
+    phase: 'Third',
+    title: 'Initial Application Design Prototype',
+    description: 'Created a basic prototype of the application with AI tremor detection and ergonomic design.',
+    timeline: 'Week 5-6'
   },
   {
     icon: Rocket,
-    phase: 'Validation',
-    title: 'Clinical Trials',
-    description: 'Ongoing clinical validation with partner hospitals. Gathering data on efficacy, safety, and real-world impact on quality of life.',
-    timeline: 'Month 8-10'
+    phase: 'Fourth',
+    title: 'Final Design',
+    description: 'Finalized the design of the device and application.',
+    timeline: 'Week 7-8'  
   }
 ];
 

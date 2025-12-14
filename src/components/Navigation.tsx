@@ -8,13 +8,10 @@ export function Navigation() {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
-    { path: '/features', label: 'Features' },
-    { path: '/technology', label: 'Technology' },
     { path: '/team', label: 'Team' },
     { path: '/research', label: 'Research' },
     { path: '/gallery', label: 'Gallery' },
     { path: '/reflection', label: 'Reflection' },
-    { path: '/contact', label: 'Contact' }
   ];
 
   const handleScrollTop = () => {

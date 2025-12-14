@@ -64,24 +64,24 @@ const learnings = [
 
 const challenges = [
   {
-    challenge: 'Balancing Functionality with Comfort',
-    solution: 'Conducted extensive ergonomic testing and weight optimization, reducing device weight by 50% while maintaining all features.',
-    outcome: 'User comfort scores improved from 6.2/10 to 8.7/10'
+    challenge: 'Overcoming Standard Interaction Barriers',
+    solution: 'We learned that standard interfaces (like typing) fail for our users. We replaced them with one-tap access and voice controls.',
+    outcome: 'Shifted from "accessible" to "adaptive" design'
   },
   {
-    challenge: 'AI Model Accuracy in Real-World Conditions',
-    solution: 'Collected diverse tremor data across different activities and environments, improving model robustness.',
-    outcome: 'Tremor detection accuracy increased from 78% to 95%'
+    challenge: 'Balancing Automation with Control',
+    solution: 'Users feared making mistakes with AI. We added robust "Undo/Redo" capabilities to provide a safety net and build confidence.',
+    outcome: 'Increased experimentation and trust in the system'
   },
   {
-    challenge: 'Battery Life vs. Processing Power',
-    solution: 'Implemented edge computing with optimized ML models and intelligent power management.',
-    outcome: 'Achieved 12+ hour battery life while maintaining real-time processing'
+    challenge: 'Bridging the Digital Literacy Gap',
+    solution: 'To help diverse users understand complex data, we used familiar metaphors (like piano keys) instead of abstract charts.',
+    outcome: 'Intuitive understanding without formal training'
   },
   {
-    challenge: 'User Adoption and Learning Curve',
-    solution: 'Redesigned mobile app with guided onboarding and simplified interface based on usability testing.',
-    outcome: 'Learning time reduced from 45 minutes to 15 minutes'
+    challenge: 'Designing for Trust and Transparency',
+    solution: 'Users need to know what the system is doing. We added clear status indicators and explained *why* changes were happening.',
+    outcome: 'Users felt informed rather than managed'
   }
 ];
 
@@ -153,7 +153,7 @@ export function ReflectionPage() {
       </div>
 
       {/* Outcomes */}
-      <div className="py-20 bg-white">
+      {/* <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-gray-900 mb-4">
@@ -167,7 +167,7 @@ export function ReflectionPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {outcomes.map((outcome, index) => {
               const Icon = outcome.icon;
-              
+
               return (
                 <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 text-center">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#26374D] to-[#536D82] rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -190,10 +190,10 @@ export function ReflectionPage() {
             })}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Key Learnings */}
-      <div className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+      {/* <div className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-gray-900 mb-4">
@@ -223,7 +223,7 @@ export function ReflectionPage() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Challenges & Solutions */}
       <div className="py-20 bg-white">
@@ -240,20 +240,22 @@ export function ReflectionPage() {
           <div className="space-y-6 max-w-4xl mx-auto">
             {challenges.map((item, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <AlertTriangle className="w-5 h-5 text-orange-600" />
+                <div className="md:flex gap-6 items-start">
+                  <div className="w-12 h-12 bg-[#26374D] rounded-full flex items-center justify-center flex-shrink-0 mb-4 md:mb-0">
+                    <AlertTriangle className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">
+                    <h3 className="text-gray-900 text-lg font-semibold mb-2">
                       {item.challenge}
                     </h3>
-                    <div className="mb-3">
-                      <p className="text-gray-700 text-sm font-semibold mb-1">Solution:</p>
-                      <p className="text-gray-600 text-sm">{item.solution}</p>
+                    <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm mb-3">
+                      <p className="text-gray-600">
+                        <span className="font-semibold text-[#26374D]">Solution:</span> {item.solution}
+                      </p>
                     </div>
-                    <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-                      <p className="text-green-800 text-sm font-semibold">Outcome: {item.outcome}</p>
+                    <div className="flex items-center gap-2 text-sm text-green-700 bg-green-50 px-3 py-1.5 rounded-full w-fit">
+                      <TrendingUp className="w-4 h-4" />
+                      <span>{item.outcome}</span>
                     </div>
                   </div>
                 </div>
@@ -262,9 +264,7 @@ export function ReflectionPage() {
           </div>
         </div>
       </div>
-
-      {/* User Testimonials */}
-      <div className="py-20 bg-gradient-to-br from-[#26374D] to-[#536D82]">
+      {/* <div className="py-20 bg-gradient-to-br from-[#26374D] to-[#536D82]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 text-white">
             <h2 className="mb-4">
@@ -298,10 +298,10 @@ export function ReflectionPage() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Future Improvements */}
-      <div className="py-20 bg-white">
+      {/* <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-gray-900 mb-4">
@@ -343,36 +343,36 @@ export function ReflectionPage() {
                 Contribution to Human-Centered AI & Ergonomics
               </h2>
             </div>
-            
+
             <div className="space-y-6 text-gray-700">
               <p className="text-lg">
-                NeuroRhythm+ demonstrates how AI can be designed to augment human capabilities while maintaining user agency and control. Our approach prioritizes:
+                This project demonstrates how intelligent systems can be designed to help people while keeping them in control. Our approach prioritizes:
               </p>
-              
+
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div className="bg-[#DDE6ED] p-6 rounded-xl">
-                  <h3 className="text-[#26374D] font-semibold mb-3">Human-Centered AI Principles</h3>
+                  <h3 className="text-[#26374D] font-semibold mb-3">Core Principles</h3>
                   <ul className="space-y-2 text-sm">
                     <li>• User control and transparency</li>
-                    <li>• Explainable AI decisions</li>
-                    <li>• Personalization without surveillance</li>
-                    <li>• Augmentation over automation</li>
+                    <li>• Clear and understandable feedback</li>
+                    <li>• Respect for user privacy</li>
+                    <li>• Helping users, not replacing them</li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-[#DDE6ED] p-6 rounded-xl">
-                  <h3 className="text-[#26374D] font-semibold mb-3">Ergonomic Awareness</h3>
+                  <h3 className="text-[#26374D] font-semibold mb-3">User Experience Focus</h3>
                   <ul className="space-y-2 text-sm">
                     <li>• Comfort-first design philosophy</li>
-                    <li>• Extended wear considerations</li>
-                    <li>• Accessibility for diverse users</li>
-                    <li>• Integration with daily activities</li>
+                    <li>• Built for long-term daily use</li>
+                    <li>• Accessible for everyone</li>
+                    <li>• Fits naturally into daily life</li>
                   </ul>
                 </div>
               </div>
-              
+
               <p className="text-lg mt-8">
-                By combining rigorous research, iterative design, and patient-centered development, we\'ve created a model for how healthcare AI can be both effective and empowering.
+                By combining thorough research, careful design, and constant user feedback, we've created a model for how assistive technology can be both effective and empowering.
               </p>
             </div>
           </div>

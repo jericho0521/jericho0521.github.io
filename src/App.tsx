@@ -1,10 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
-import { FeaturesPage } from './pages/FeaturesPage';
-import { TechnologyPage } from './pages/TechnologyPage';
 import { TeamPage } from './pages/TeamPage';
-import { ContactPage } from './pages/ContactPage';
 import { ResearchPage } from './pages/ResearchPage';
 import { GalleryPage } from './pages/GalleryPage';
 import { ReflectionPage } from './pages/ReflectionPage';
@@ -18,13 +15,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/features" element={<FeaturesPage />} />
-          <Route path="/technology" element={<TechnologyPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/research" element={<ResearchPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/reflection" element={<ReflectionPage />} />
-          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </BrowserRouter>

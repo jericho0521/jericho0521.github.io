@@ -59,28 +59,6 @@ export function AboutPage() {
             <p className="text-gray-600 mb-6 text-lg">
               By providing rhythmic cues through music, we can help activate alternative neural pathways, effectively bypassing the damaged circuits and reducing tremor amplitude. Our AI algorithms continuously analyze tremor patterns and adapt the musical intervention in real-time for maximum effectiveness.
             </p>
-
-            <div className="bg-gradient-to-br from-[#DDE6ED] to-gray-100 p-8 rounded-xl mt-8">
-              <h3 className="text-gray-900 mb-4">Key Statistics</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex gap-3">
-                  <span className="text-[#26374D]">•</span>
-                  <span>Over 10 million people worldwide live with Parkinson&apos;s disease</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#26374D]">•</span>
-                  <span>70% of Parkinson&apos;s patients experience hand tremors</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#26374D]">•</span>
-                  <span>Music therapy has shown up to 50% improvement in motor function</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#26374D]">•</span>
-                  <span>Non-invasive interventions have 95% patient acceptance rates</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

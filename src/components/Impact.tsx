@@ -3,27 +3,18 @@ import { TrendingUp, Users, Award, Heart } from 'lucide-react';
 const metrics = [
   {
     icon: TrendingUp,
-    value: '47%',
-    label: 'Average Tremor Reduction',
-    description: 'Based on pilot study results'
+    label: 'Improve Motor Stability',
+    description: 'Provide real-time AI assistances to reduce individuals impact of tremors, while enhancing individuals’ accuracy in daily activities such as typing, writing, and instruments practices. '
   },
   {
     icon: Users,
-    value: '85%',
-    label: 'User Satisfaction',
-    description: 'Would recommend to others'
+    label: 'Improve Ergonomics Comfort',
+    description: 'Reduces stresses and fatigue by adapting to individual tremor patterns and adjusting dynamic adjustments. '
   },
   {
     icon: Award,
-    value: '3',
-    label: 'Innovation Awards',
-    description: 'Healthcare & AI categories'
-  },
-  {
-    icon: Heart,
-    value: '50+',
-    label: 'Pilot Participants',
-    description: 'Across multiple test sites'
+    label: 'Increase Independence',
+    description: 'Enable individuals to perform daily basis task with less reliance on caregivers.'
   }
 ];
 
@@ -40,41 +31,24 @@ export function Impact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {metrics.map((metric, index) => {
             const Icon = metric.icon;
-            
+
             return (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#DDE6ED] to-[#9DB2BF] rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Icon className="w-8 h-8 text-[#26374D]" />
                 </div>
-                <div className="text-gray-900 mb-2">
-                  {metric.value}
-                </div>
-                <div className="text-gray-700 mb-1">
+                <h3 className="text-gray-900 font-semibold mb-2">
                   {metric.label}
-                </div>
+                </h3>
                 <p className="text-gray-500 text-sm">
                   {metric.description}
                 </p>
               </div>
             );
           })}
-        </div>
-
-        <div className="bg-gradient-to-br from-[#26374D] to-[#536D82] rounded-2xl p-8 md:p-12 text-white">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="mb-4">
-              Patient Testimonial
-            </h3>
-            <blockquote className="text-lg md:text-xl mb-6 italic">
-              &ldquo;NeuroRhythm+ has given me back the confidence to do things I love. The tremors are still there, but they&apos;re manageable now. I can hold a cup of coffee, use my phone, and even play the piano again.&rdquo;
-            </blockquote>
-            <div className="text-[#DDE6ED]">
-              — Pilot Study Participant, Age 68
-            </div>
-          </div>
         </div>
       </div>
     </div>
