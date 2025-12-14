@@ -2,28 +2,40 @@ import { Mail, Linkedin, Github } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'Your Name',
-    role: 'Project Lead & AI Engineer',
-    bio: 'Specializes in machine learning and healthcare applications.',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop'
+    name: 'Jericho',
+    role: 'Project Lead & Developer',
+    bio: 'Leads project development and technical implementation.',
+    avatar: '/team/jericho.png'
   },
   {
-    name: 'Team Member',
-    role: 'Hardware & Ergonomics Designer',
-    bio: 'Expert in wearable device design and human factors.',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop'
+    name: 'Ben',
+    role: 'Team Member',
+    bio: 'Contributes to design and development.',
+    avatar: '/team/ben.png'
   },
   {
-    name: 'Team Member',
-    role: 'Clinical Research Coordinator',
-    bio: 'Coordinates clinical trials and patient engagement.',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop'
+    name: 'Carlos',
+    role: 'Team Member',
+    bio: 'Contributes to research and development.',
+    avatar: '/team/carlos.png'
   },
   {
-    name: 'Team Member',
-    role: 'Music Therapist & Researcher',
-    bio: 'Develops therapeutic music interventions for neurological conditions.',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop'
+    name: 'Jouni',
+    role: 'Team Member',
+    bio: 'Contributes to engineering and testing.',
+    avatar: '/team/jouni.png'
+  },
+  {
+    name: 'Lam',
+    role: 'Team Member',
+    bio: 'Contributes to project coordination.',
+    avatar: '/team/lam.png'
+  },
+  {
+    name: 'Serene',
+    role: 'Team Member',
+    bio: 'Contributes to design and user experience.',
+    avatar: '/team/serene.png'
   }
 ];
 
@@ -44,8 +56,8 @@ export function Team() {
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
               <div className="aspect-square bg-gradient-to-br from-[#9DB2BF] to-[#536D82] overflow-hidden">
-                <img 
-                  src={member.avatar} 
+                <img
+                  src={member.avatar}
                   alt={member.name}
                   className="w-full h-full object-cover"
                 />

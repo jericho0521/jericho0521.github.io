@@ -1,5 +1,5 @@
 import { Footer } from '../components/Footer';
-import { Search, Users, ClipboardCheck, TrendingUp, FileText, BarChart3, Lightbulb } from 'lucide-react';
+import { Search, Users, ClipboardCheck, TrendingUp, BarChart3, Lightbulb } from 'lucide-react';
 
 const researchMethods = [
   {

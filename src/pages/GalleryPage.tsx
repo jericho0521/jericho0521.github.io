@@ -1,5 +1,5 @@
 import { Footer } from '../components/Footer';
-import { Camera, Video, FileImage, Play, Download, ExternalLink } from 'lucide-react';
+import { Camera, Video, FileImage } from 'lucide-react';
 
 const milestones = [
   {
@@ -113,8 +113,8 @@ export function GalleryPage() {
             {milestones.map((milestone, index) => (
               <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
                 <div className="relative h-48 bg-gradient-to-br from-[#536D82] to-[#26374D] overflow-hidden">
-                  <img 
-                    src={milestone.image} 
+                  <img
+                    src={milestone.image}
                     alt={milestone.title}
                     className="w-full h-full object-cover opacity-80"
                   />
@@ -163,8 +163,8 @@ export function GalleryPage() {
             {prototypes.map((prototype, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="relative h-64 bg-gradient-to-br from-[#536D82] to-[#26374D]">
-                  <img 
-                    src={prototype.image} 
+                  <img
+                    src={prototype.image}
                     alt={prototype.name}
                     className="w-full h-full object-cover opacity-90"
                   />
@@ -197,47 +197,7 @@ export function GalleryPage() {
         </div>
       </div>
 
-      {/* Video Section */}
-      <div className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-[#26374D] to-[#536D82] rounded-2xl p-8 md:p-12 text-white">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-8">
-                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Play className="w-8 h-8" />
-                </div>
-                <h2 className="mb-4">
-                  Project Video
-                </h2>
-                <p className="text-[#DDE6ED] mb-8">
-                  Watch our 2-minute project overview video showcasing NeuroRhythm+, our design process, and impact.
-                </p>
-              </div>
-              
-              <div className="bg-black/30 rounded-xl p-8 backdrop-blur-sm">
-                <div className="aspect-video bg-black/50 rounded-lg flex items-center justify-center mb-6">
-                  <div className="text-center">
-                    <Play className="w-16 h-16 mx-auto mb-4 opacity-75" />
-                    <p className="text-[#DDE6ED] mb-4">2-Minute Project Video</p>
-                    <a 
-                      href="https://drive.google.com/file/d/YOUR_VIDEO_ID/view" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#26374D] rounded-lg hover:bg-[#DDE6ED] transition-colors"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                      Watch on Google Drive
-                    </a>
-                  </div>
-                </div>
-                <p className="text-sm text-[#9DB2BF] text-center">
-                  Note: Replace the Google Drive link with your actual video URL
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       <Footer />
     </>
