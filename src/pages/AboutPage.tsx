@@ -42,6 +42,32 @@ export function AboutPage() {
         </div>
       </div>
 
+      {/* Poster Section */}
+      <div className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-gray-900 mb-4">Project Poster</h2>
+            <p className="text-gray-600 text-lg">Overview of our research and design</p>
+
+            {/* Poster Image */}
+            <div className="mt-12 w-full mx-auto bg-white p-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+              <a
+                href="/prototype/poster.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block cursor-zoom-in group rounded-lg overflow-hidden"
+              >
+                <img
+                  src="/prototype/poster.png"
+                  alt="NeuroRhythm+ Project Poster"
+                  className="w-full h-auto transform group-hover:scale-[1.01] transition-transform duration-500"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <ProblemSolution />
 
       <div className="py-20 bg-white">

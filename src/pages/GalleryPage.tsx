@@ -119,7 +119,7 @@ export function GalleryPage() {
 
           <div className="flex flex-wrap justify-center gap-8">
             {prototypes.map((prototype, index) => (
-              <div key={index} className="w-full max-w-lg bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div key={index} className="w-full max-w-md bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <img
                   src={prototype.image}
                   alt="Digital Prototype"

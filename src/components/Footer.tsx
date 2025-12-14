@@ -40,20 +40,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="mb-4">Get in Touch</h4>
-            <ul className="space-y-3 text-gray-400">
-              <li>
-                <a href="mailto:contact@neurorhythm.com" className="hover:text-white transition-colors">
-                  contact@neurorhythm.com
-                </a>
-              </li>
-              <li>For research collaborations</li>
-              <li>For clinical partnerships</li>
-            </ul>
-          </div>
-
           {/* Resources */}
           <div>
             <h4 className="mb-4">Project Resources</h4>

@@ -26,13 +26,13 @@ export function HomePage() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <a 
+                {/* <a 
                   href="#products" 
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#26374D] text-white rounded-lg hover:bg-[#536D82] transition-colors"
                 >
                   View Products
                   <ArrowRight className="w-5 h-5" />
-                </a>
+                </a> */}
                 <a 
                   href="#learn-more" 
                   className="px-6 py-3 border-2 border-[#26374D] text-[#26374D] rounded-lg hover:bg-[#DDE6ED] transition-colors"
@@ -75,9 +75,9 @@ export function HomePage() {
               <div className="w-12 h-12 bg-[#26374D] rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white text-xl">1</span>
               </div>
-              <h3 className="text-gray-900 mb-3">Evidence-Based</h3>
+              <h3 className="text-gray-900 mb-3">Return Freedom</h3>
               <p className="text-gray-600">
-                Built on extensive research demonstrating the neurological connection between music and motor control.
+                NeuroRhythm+ empowers Parkinson&apos;s patients to regain control of their lives through non-invasive, comfortable assistive technology.
               </p>
             </div>
 
@@ -95,9 +95,10 @@ export function HomePage() {
               <div className="w-12 h-12 bg-[#9DB2BF] rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white text-xl">3</span>
               </div>
-              <h3 className="text-gray-900 mb-3">Clinically Validated</h3>
+              <h3 className="text-gray-900 mb-3">Music Therapy</h3>
               <p className="text-gray-600">
-                Ongoing clinical trials showing significant improvements in tremor control and quality of life.
+                NeuroRhythm+ harnesses the therapeutic power of music, transforming interaction into therapy to strengthen neural connections and improve motor control.
+                
               </p>
             </div>
           </div>
