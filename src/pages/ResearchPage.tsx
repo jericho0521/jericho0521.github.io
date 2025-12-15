@@ -16,7 +16,7 @@ const researchMethods = [
   {
     icon: Users,
     title: 'User Findings',
-    description: 'Semi-structured interviews with 15 Parkinson\'s patients and 8 caregivers to understand daily challenges and needs.',
+    description: 'Semi-structured interviews with doctor, pharmcist and caregiver to understand daily challenges and needs.',
     findings: [
       'Fine motor control loss affects critical tasks like medication and writing',
       'Emotional distress stems from inability to engage in identity-forming hobbies',
@@ -38,7 +38,7 @@ const researchMethods = [
   {
     icon: BarChart3,
     title: 'Usability Testing',
-    description: 'Task-based usability testing with 12 participants across 3 prototype iterations.',
+    description: 'Task-based usability testing with participants across paper prototype iterations.',
     findings: [
       'Voice control confirmed as preferred interaction method over typing for tremor patients',
       'Simplified one-tap login critical for reducing motor-load entry barriers (Severity 4 resolved)',
